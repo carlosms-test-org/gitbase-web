@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Helmet } from 'react-helmet';
-import { Grid, Row, Modal } from 'react-bootstrap';
+import {Helmet} from 'react-helmet';
+import { Grid, Row, Modal } from 'react-bootstrap'
 import nanoid from 'nanoid';
 import SplitPane from 'react-split-pane';
 import 'uast-viewer/dist/default-theme.css';
@@ -16,8 +16,8 @@ import CloseIcon from './icons/close-query-tab.svg';
 
 const INACTIVE_TIMEOUT = 3600000;
 
-function persist(key, value) {
-  window.localStorage.setItem(key, JSON.stringify(value));
+function persist(key, value){
+  window.localStorage.setItem(key, JSON.stringify( value ));
 }
 
 const dateFormat = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/;
